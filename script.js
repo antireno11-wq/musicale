@@ -23,11 +23,13 @@ const messageField = document.querySelector('textarea[name="message"]');
 prefillLinks.forEach((link) => {
   link.addEventListener("click", () => {
     const eventType = link.getAttribute("data-prefill");
+
     if (eventTypeField) {
       eventTypeField.value = eventType;
     }
+
     if (messageField && !messageField.value.trim()) {
-      messageField.value = `Hola, quiero cotizar una propuesta para ${eventType}. Me interesa recibir una recomendacion de formato y repertorio.`;
+      messageField.value = `Hola, quiero cotizar una propuesta de Musicale para ${eventType}. Me interesa recibir una recomendación de formato, repertorio y presencia musical para mi evento.`;
     }
   });
 });
@@ -38,11 +40,11 @@ const formStatus = document.getElementById("formStatus");
 
 function getFormMessage(data) {
   return [
-    "Hola, quiero cotizar una experiencia musical.",
+    "Hola, quiero cotizar una propuesta musical de Musicale.",
     "",
     `Nombre: ${data.name}`,
     `Correo: ${data.email}`,
-    `Telefono: ${data.phone}`,
+    `Teléfono: ${data.phone}`,
     `Tipo de evento: ${data.eventType}`,
     `Mensaje: ${data.message}`
   ].join("\n");
@@ -71,14 +73,14 @@ if (form) {
     const data = readFormData();
 
     if (hasMissingFields(data)) {
-      formStatus.textContent = "Completa todos los campos para generar tu solicitud.";
+      formStatus.textContent = "Complete todos los campos para generar su solicitud.";
       return;
     }
 
     const message = encodeURIComponent(getFormMessage(data));
     const whatsappUrl = `https://wa.me/56993319981?text=${message}`;
 
-    formStatus.textContent = "Abrimos tu solicitud en WhatsApp para que puedas enviarla de inmediato.";
+    formStatus.textContent = "Abrimos su solicitud en WhatsApp para que pueda enviarla de inmediato.";
     window.open(whatsappUrl, "_blank", "noopener,noreferrer");
   });
 }
@@ -88,14 +90,14 @@ if (mailButton) {
     const data = readFormData();
 
     if (hasMissingFields(data)) {
-      formStatus.textContent = "Completa todos los campos para preparar el correo.";
+      formStatus.textContent = "Complete todos los campos para preparar el correo.";
       return;
     }
 
-    const subject = encodeURIComponent(`Cotizacion ${data.eventType}`);
+    const subject = encodeURIComponent(`Cotización ${data.eventType}`);
     const body = encodeURIComponent(getFormMessage(data));
 
-    formStatus.textContent = "Preparamos tu correo con el resumen de la solicitud.";
+    formStatus.textContent = "Preparamos su correo con el resumen de la solicitud.";
     window.location.href = `mailto:fantireno@gmail.com?subject=${subject}&body=${body}`;
   });
 }

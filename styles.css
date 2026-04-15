@@ -183,7 +183,7 @@ button {
 }
 
 .hero-copy h1 {
-  max-width: 11ch;
+  max-width: 8ch;
   color: #f8f7f2;
   font-size: clamp(3.4rem, 8vw, 6.4rem);
   line-height: 0.92;
@@ -266,6 +266,13 @@ button {
   color: #f8f7f2;
 }
 
+.closing-ghost,
+.contact-ghost {
+  border-color: rgba(18, 29, 35, 0.12);
+  background: rgba(255, 255, 255, 0.74);
+  color: var(--brand-deep);
+}
+
 .hero-points {
   display: flex;
   flex-wrap: wrap;
@@ -335,6 +342,10 @@ button {
   backdrop-filter: blur(20px);
 }
 
+.overview-section {
+  align-items: stretch;
+}
+
 .trust-strip {
   display: grid;
   grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
@@ -381,6 +392,67 @@ button {
   box-shadow: var(--shadow-md);
 }
 
+.overview-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.overview-card {
+  padding: 22px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: var(--shadow-md);
+}
+
+.overview-card-accent {
+  background:
+    radial-gradient(circle at 100% 0%, rgba(204, 175, 112, 0.16), transparent 42%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 244, 236, 0.94));
+}
+
+.overview-label,
+.signature-chip {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.overview-label {
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  background: rgba(204, 175, 112, 0.12);
+  color: var(--brand-accent);
+}
+
+.signature-chip {
+  margin-top: 20px;
+  padding: 10px 14px;
+  background: rgba(15, 29, 37, 0.06);
+  color: var(--brand-deep);
+}
+
+.overview-card h3 {
+  margin: 0 0 8px;
+  color: var(--brand-deep);
+  font-size: 1.12rem;
+}
+
+.overview-card p {
+  margin: 0;
+  color: var(--ink-soft);
+  line-height: 1.74;
+}
+
+.overview-card a {
+  color: var(--brand-accent);
+}
+
 .trust-metrics article {
   padding: 18px;
 }
@@ -404,6 +476,11 @@ button {
 .video-card h3 {
   font-size: 1.1rem;
   margin-bottom: 8px;
+}
+
+.trust-metrics span {
+  color: var(--ink-soft);
+  line-height: 1.68;
 }
 
 .section-grid {
@@ -541,6 +618,11 @@ button {
   margin-top: 16px;
   color: var(--brand-accent);
   font-weight: 800;
+}
+
+.text-link-placeholder {
+  opacity: 0.8;
+  cursor: default;
 }
 
 .repertoire-grid {
