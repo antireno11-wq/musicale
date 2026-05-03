@@ -502,19 +502,12 @@
           </article>
 
           <article class="video-card" data-reveal>
-            <video
-              class="video-media"
-              controls
-              preload="metadata"
-              playsinline
-              poster="./assets/tres-tenores.jpg"
-            >
-              <source src="./assets/gala-lirica-los-dominicos.mp4" type="video/mp4" />
-              Su navegador no puede reproducir este video.
-            </video>
-            <h3>Gala lírica · Los Dominicos</h3>
-            <p>Registro real de un formato lírico y escénico pensado para conciertos, galas y presentaciones especiales.</p>
-            <a class="text-link" href="#contacto" data-prefill="Concierto temático o evento cultural">Solicitar propuesta de concierto</a>
+            <div class="video-thumb" style="background-image: url('./assets/tres-tenores.jpg')">
+              <span>Conciertos líricos</span>
+            </div>
+            <h3>Programas líricos y conciertos especiales</h3>
+            <p>Una línea pensada para galas, recitales y formatos de concierto con presencia escénica y dirección musical cuidada.</p>
+            <a class="text-link" href="#video-destacado">Ver registro completo</a>
           </article>
         </div>
       </section>
@@ -679,6 +672,30 @@
             </p>
             <div class="form-status" id="formStatus" aria-live="polite"></div>
           </form>
+        </div>
+      </section>
+
+      <section class="panel featured-video-panel" id="video-destacado">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Video destacado</p>
+          <h2>Gala lírica · Los Dominicos</h2>
+          <p>
+            Un registro real de la propuesta escénica y musical de Musicale en un formato lírico pensado para conciertos, galas
+            y presentaciones especiales de mayor presencia artística.
+          </p>
+        </div>
+
+        <div class="featured-video-wrap" data-reveal>
+          <video
+            class="featured-video"
+            controls
+            preload="metadata"
+            playsinline
+            poster="./assets/tres-tenores.jpg"
+          >
+            <source src="./assets/gala-lirica-los-dominicos.mp4" type="video/mp4" />
+            Su navegador no puede reproducir este video.
+          </video>
         </div>
       </section>
     </main>

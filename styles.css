@@ -768,6 +768,26 @@ button {
   margin-bottom: 22px;
 }
 
+.featured-video-panel {
+  display: grid;
+  gap: 22px;
+}
+
+.featured-video-wrap {
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  background: #0f1d25;
+  box-shadow: var(--shadow-md);
+}
+
+.featured-video {
+  display: block;
+  width: 100%;
+  max-height: min(72vh, 820px);
+  background: #0f1d25;
+}
+
 .video-thumb {
   min-height: 220px;
   display: flex;
