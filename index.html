@@ -502,12 +502,19 @@
           </article>
 
           <article class="video-card" data-reveal>
-            <div class="video-thumb placeholder-thumb">
-              <span>Programa especial</span>
-            </div>
-            <h3>Video de concierto temático</h3>
-            <p>Reservado para un programa especial: clásicos del cine, Italia, boleros de gala o Navidad.</p>
-            <a class="text-link" href="#contacto" data-prefill="Concierto temático o evento cultural">Pedir propuesta de programa</a>
+            <video
+              class="video-media"
+              controls
+              preload="metadata"
+              playsinline
+              poster="./assets/tres-tenores.jpg"
+            >
+              <source src="./assets/gala-lirica-los-dominicos.mp4" type="video/mp4" />
+              Su navegador no puede reproducir este video.
+            </video>
+            <h3>Gala lírica · Los Dominicos</h3>
+            <p>Registro real de un formato lírico y escénico pensado para conciertos, galas y presentaciones especiales.</p>
+            <a class="text-link" href="#contacto" data-prefill="Concierto temático o evento cultural">Solicitar propuesta de concierto</a>
           </article>
         </div>
       </section>

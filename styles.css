@@ -740,6 +740,15 @@ button {
   padding: 0;
 }
 
+.video-media {
+  display: block;
+  width: 100%;
+  min-height: 220px;
+  max-height: 220px;
+  object-fit: cover;
+  background: #0f1d25;
+}
+
 .video-card h3,
 .video-card p,
 .video-card .text-link {
