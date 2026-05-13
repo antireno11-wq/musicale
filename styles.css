@@ -9,11 +9,11 @@
   --brand: #dc8b33;
   --brand-deep: #0f1d25;
   --brand-accent: #b9681e;
-  --shadow-lg: 0 30px 80px rgba(10, 16, 22, 0.14);
-  --shadow-md: 0 20px 48px rgba(10, 16, 22, 0.1);
-  --radius-xl: 34px;
-  --radius-lg: 26px;
-  --radius-md: 20px;
+  --shadow-lg: 0 24px 64px rgba(10, 16, 22, 0.12);
+  --shadow-md: 0 14px 34px rgba(10, 16, 22, 0.08);
+  --radius-xl: 28px;
+  --radius-lg: 22px;
+  --radius-md: 16px;
   --container: 1240px;
 }
 
@@ -70,7 +70,7 @@ button {
 
 .hero {
   position: relative;
-  min-height: 840px;
+  min-height: 760px;
   background: #0d171d;
 }
 
@@ -169,7 +169,7 @@ button {
 .hero-content {
   width: min(100%, calc(var(--container) - 40px));
   margin: 0 auto;
-  padding: 92px 0 86px;
+  padding: 74px 0 70px;
   display: grid;
   grid-template-columns: minmax(0, 1.35fr) minmax(360px, 0.7fr);
   gap: 34px;
@@ -228,11 +228,11 @@ button {
 }
 
 .hero-lead {
-  max-width: 64ch;
+  max-width: 56ch;
   margin: 22px 0 0;
   color: rgba(255, 255, 255, 0.84);
   font-size: 1.08rem;
-  line-height: 1.8;
+  line-height: 1.65;
 }
 
 .hero-actions,
@@ -340,7 +340,7 @@ button {
 }
 
 .hero-aside {
-  padding: 28px;
+  padding: 24px;
   color: #f6f4ef;
   border-radius: var(--radius-lg);
   box-shadow: 0 24px 50px rgba(9, 15, 20, 0.24);
@@ -355,7 +355,7 @@ button {
 
 .hero-aside p {
   color: rgba(255, 255, 255, 0.78);
-  line-height: 1.72;
+  line-height: 1.6;
 }
 
 .hero-facts {
@@ -382,7 +382,7 @@ button {
 
 .panel {
   margin-top: 22px;
-  padding: 34px;
+  padding: 30px;
   background: var(--surface);
   backdrop-filter: blur(20px);
 }
@@ -443,7 +443,7 @@ button {
 }
 
 .overview-card {
-  padding: 22px;
+  padding: 20px;
   border-radius: var(--radius-md);
   border: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.94);
@@ -491,7 +491,7 @@ button {
 .overview-card p {
   margin: 0;
   color: var(--ink-soft);
-  line-height: 1.74;
+  line-height: 1.58;
 }
 
 .overview-card a {
@@ -499,7 +499,7 @@ button {
 }
 
 .trust-metrics article {
-  padding: 18px;
+  padding: 16px;
 }
 
 .trust-metrics strong,
@@ -525,7 +525,7 @@ button {
 
 .trust-metrics span {
   color: var(--ink-soft);
-  line-height: 1.68;
+  line-height: 1.55;
 }
 
 .section-grid {
@@ -536,8 +536,8 @@ button {
 }
 
 .section-copy p {
-  margin: 18px 0 0;
-  line-height: 1.78;
+  margin: 16px 0 0;
+  line-height: 1.62;
 }
 
 .bio-points {
@@ -608,8 +608,8 @@ button {
 }
 
 .section-heading p {
-  margin: 16px 0 0;
-  line-height: 1.75;
+  margin: 14px 0 0;
+  line-height: 1.6;
 }
 
 .section-highlight {
@@ -626,7 +626,7 @@ button {
 .repertoire-card,
 .video-card,
 .testimonial-card {
-  padding: 22px;
+  padding: 20px;
 }
 
 .value-card p,
@@ -634,7 +634,7 @@ button {
 .video-card p,
 .testimonial-card p {
   margin: 0;
-  line-height: 1.72;
+  line-height: 1.55;
 }
 
 .service-grid-2 {
@@ -644,7 +644,7 @@ button {
 }
 
 .service-card-large {
-  padding: 24px;
+  padding: 22px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(255, 245, 234, 0.94)),
     #ffffff;
@@ -666,14 +666,14 @@ button {
 
 .service-card-large p {
   margin: 0 0 14px;
-  line-height: 1.76;
+  line-height: 1.58;
 }
 
 .service-card-large ul {
   margin: 0;
   padding-left: 18px;
   color: var(--ink-soft);
-  line-height: 1.72;
+  line-height: 1.58;
 }
 
 .text-link {
@@ -726,7 +726,7 @@ button {
   border-radius: 16px;
   background: linear-gradient(180deg, rgba(12, 20, 26, 0.12), rgba(12, 20, 26, 0.72));
   color: #f6f4ef;
-  line-height: 1.6;
+  line-height: 1.45;
 }
 
 .video-grid {
@@ -876,7 +876,7 @@ button {
 
 .closing-copy p {
   margin: 16px 0 0;
-  line-height: 1.76;
+  line-height: 1.6;
 }
 
 .contact-section {
@@ -887,7 +887,7 @@ button {
 
 .contact-copy p {
   margin: 16px 0 0;
-  line-height: 1.78;
+  line-height: 1.6;
 }
 
 .contact-details {
@@ -969,7 +969,7 @@ button {
 
 .form-footnote {
   margin: 0;
-  line-height: 1.7;
+  line-height: 1.55;
   font-size: 0.94rem;
 }
 
@@ -1005,7 +1005,7 @@ button {
 .footer-links a,
 .footer-links span {
   color: rgba(255, 255, 255, 0.74);
-  line-height: 1.72;
+  line-height: 1.55;
 }
 
 .footer-links {
