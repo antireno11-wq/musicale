@@ -98,6 +98,6 @@ if (mailButton) {
     const body = encodeURIComponent(getFormMessage(data));
 
     formStatus.textContent = "Preparamos su correo con el resumen de la solicitud.";
-    window.location.href = `mailto:fantireno@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:musicalefx@gmail.com?subject=${subject}&body=${body}`;
   });
 }
