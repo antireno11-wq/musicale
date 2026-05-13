@@ -192,7 +192,6 @@ button {
 .hero-copy h1,
 .section-copy h2,
 .section-heading h2,
-.closing-copy h2,
 .contact-copy h2,
 .hero-aside h2,
 .site-footer h3 {
@@ -213,12 +212,10 @@ button {
 .hero-points span,
 .section-copy p,
 .section-heading p,
-.value-card p,
-.service-card-large p,
+.service-card-compact p,
 .repertoire-card p,
 .video-card p,
 .testimonial-card span,
-.closing-copy p,
 .contact-copy p,
 .contact-details p,
 .form-footnote,
@@ -236,7 +233,6 @@ button {
 }
 
 .hero-actions,
-.closing-actions,
 .form-actions {
   display: flex;
   flex-wrap: wrap;
@@ -310,7 +306,6 @@ button {
   color: #f8f7f2;
 }
 
-.closing-ghost,
 .contact-ghost {
   border-color: rgba(18, 29, 35, 0.12);
   background: rgba(255, 255, 255, 0.74);
@@ -401,7 +396,6 @@ button {
 .trust-copy h2,
 .section-copy h2,
 .section-heading h2,
-.closing-copy h2,
 .contact-copy h2 {
   color: var(--brand-deep);
   font-size: clamp(2.2rem, 5vw, 4rem);
@@ -409,7 +403,6 @@ button {
 }
 
 .trust-metrics,
-.value-grid,
 .repertoire-grid,
 .testimonial-grid {
   display: grid;
@@ -421,11 +414,10 @@ button {
 }
 
 .trust-metrics article,
-.value-card,
 .repertoire-card,
 .testimonial-card,
 .video-card,
-.service-card-large,
+.service-card-compact,
 .contact-form-card,
 .contact-details article,
 .logo-card,
@@ -503,8 +495,7 @@ button {
 }
 
 .trust-metrics strong,
-.service-card-large h3,
-.value-card h3,
+.service-card-compact h3,
 .repertoire-card h3,
 .video-card h3,
 .testimonial-card strong,
@@ -515,8 +506,7 @@ button {
 }
 
 .trust-metrics strong,
-.value-card h3,
-.service-card-large h3,
+.service-card-compact h3,
 .repertoire-card h3,
 .video-card h3 {
   font-size: 1.1rem;
@@ -545,6 +535,23 @@ button {
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 24px;
+}
+
+.service-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.service-highlights span {
+  display: inline-flex;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(220, 139, 51, 0.22);
+  color: var(--brand-accent);
+  font-size: 0.92rem;
+  font-weight: 800;
 }
 
 .bio-points span {
@@ -618,18 +625,12 @@ button {
     linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(255, 246, 237, 0.94));
 }
 
-.value-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.value-card,
 .repertoire-card,
 .video-card,
 .testimonial-card {
   padding: 20px;
 }
 
-.value-card p,
 .repertoire-card p,
 .video-card p,
 .testimonial-card p {
@@ -637,13 +638,13 @@ button {
   line-height: 1.55;
 }
 
-.service-grid-2 {
+.service-grid-compact {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
 }
 
-.service-card-large {
+.service-card-compact {
   padding: 22px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(255, 245, 234, 0.94)),
@@ -664,12 +665,12 @@ button {
   font-weight: 800;
 }
 
-.service-card-large p {
+.service-card-compact p {
   margin: 0 0 14px;
   line-height: 1.58;
 }
 
-.service-card-large ul {
+.service-card-compact ul {
   margin: 0;
   padding-left: 18px;
   color: var(--ink-soft);
@@ -858,25 +859,6 @@ button {
 .testimonial-card strong {
   margin-bottom: 4px;
   font-size: 1rem;
-}
-
-.closing-panel {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-  gap: 24px;
-  background:
-    radial-gradient(circle at 100% 0%, rgba(220, 139, 51, 0.18), transparent 28%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 244, 231, 0.98));
-}
-
-.closing-copy {
-  max-width: 760px;
-}
-
-.closing-copy p {
-  margin: 16px 0 0;
-  line-height: 1.6;
 }
 
 .contact-section {
@@ -1090,7 +1072,6 @@ button {
   }
 
   .trust-metrics,
-  .value-grid,
   .repertoire-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1107,7 +1088,6 @@ button {
 
 @media (max-width: 900px) {
   .site-header,
-  .closing-panel,
   .site-footer {
     flex-direction: column;
     align-items: flex-start;
@@ -1117,14 +1097,13 @@ button {
     justify-content: flex-start;
   }
 
-  .service-grid-2,
+  .service-grid-compact,
   .field-row,
   .contact-details,
   .testimonial-grid,
   .gallery-grid,
   .video-grid,
   .trust-metrics,
-  .value-grid,
   .repertoire-grid {
     grid-template-columns: 1fr;
   }
@@ -1186,8 +1165,7 @@ button {
   }
 
   .hero-aside,
-  .service-card-large,
-  .value-card,
+  .service-card-compact,
   .repertoire-card,
   .video-card,
   .testimonial-card,
